@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import pebblify from "../assets/logos/pebblify.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,17 +30,7 @@ const Navbar = () => {
           }`}
         >
           <Link to="/">
-            <div className="flex items-center">
-              <svg
-                className="h-8 w-8 mr-2"
-                viewBox="0 0 100 100"
-                fill={scrolled ? "blue" : "white"}
-              >
-                <path d="M50 0 L100 50 L50 100 L0 50 Z" />
-                <path d="M50 20 L80 50 L50 80 L20 50 Z" fill="blue" />
-              </svg>
-              <span className="font-bold text-2xl tracking-wider">AMAVA</span>
-            </div>
+            <img src={pebblify} alt="pebblify" className="w-24  " />
           </Link>
         </div>
 

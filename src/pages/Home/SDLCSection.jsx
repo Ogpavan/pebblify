@@ -63,7 +63,7 @@ const SDLCSection = () => {
   });
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24  ">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl poppins-bold text-gray-900 text-center mb-6">
           How We Work – Our SDLC Process
@@ -87,7 +87,7 @@ const SDLCSection = () => {
               return (
                 <motion.div
                   key={index}
-                  className="relative flex flex-col md:flex-row items-center"
+                  className="relative flex flex-col md:flex-row items-center bg-white md:bg-transparent "
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -97,8 +97,8 @@ const SDLCSection = () => {
                   {isLeft ? (
                     <>
                       <div className="hidden md:flex w-1/2 justify-end pr-8 text-right">
-                        <div>
-                          <h3 className="text-2xl text-gray-800 poppins-semibold mb-2">
+                        <div className="">
+                          <h3 className="text-2xl text-gray-800 poppins-semibold mb-2 ">
                             {step.title}
                           </h3>
                           <p className="text-gray-600 poppins-light leading-relaxed">
